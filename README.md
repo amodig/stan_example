@@ -1,4 +1,4 @@
-= A/B/C/D/.../N testing with Stan
+# A/B/C/D/.../N testing with Stan
 
 An example project of generalized A/B testing using Bayesian modeling with
 Stan. Project includes implementations in PyStan and RStan.
