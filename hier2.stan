@@ -45,10 +45,10 @@ model {
   // Likelihood log-probability increment:
   for (n in 1:N) {
     if (y[n] > 0) {
-      target += count[n] * (bernoulli_lpmf(0 | theta[id[n]]) +
+      target += count[n] * (bernoulli_lpmf(1 | theta[id[n]]) +
         lognormal_lpdf(y[n] | mu[id[n]], sigma[id[n]]));
     } else {
-      target += count[n] * bernoulli_lpmf(1 | theta[id[n]]);
+      target += count[n] * bernoulli_lpmf(0 | theta[id[n]]);
     }
   }
 }
